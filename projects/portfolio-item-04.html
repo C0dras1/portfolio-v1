@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
-        <!-- Update these with your own fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
         
         <link rel="stylesheet" href="../css/style.css">
@@ -15,18 +14,18 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
-            </div>
+          <div class="logo">
+            <a href="#">Jesse Suderman</a>
+        </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="../index.html#contact" class="nav__link">Contact me</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,44 +33,60 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                Pig Game<strong>dice game</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">Javascript Game</p>
+            <img src="../img/portfolio-04.png" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+          <div class="techList">
+            <h4>Tools used: </h4>
+            <ul>
+              <li>Responsive Design</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+              <li>DOM Manipulation</li>
+            </ul>
+            ~<a href="https://pig-game.c0dras1.vercel.app/">Demo</a> // <a href="https://github.com/C0dras1/pig-game">Source Code</a>~
+          </div>
+            
+          <div class="details">
+            <p><strong>Game Rules:</strong></p>
+            <p>1. In each turn, a player rolls a dice as many times as he/she whishes. Each result get added to his/her ROUND score.</p>
+            <p>2. BUT, if the player rolls a 1, all his/her ROUND score gets lost. After that, it's the next player's turn.</p>
+            <p>3. The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn.</p>
+            <p>4. A player loses their ENTIRE score if they roll two 6's in a row on either die.</p>
+            <p>5. The first player to reach the set points on GLOBAL score wins the game.</p>
+          </div>
+            
         </div>
         
         
         <!-- Footer -->
         <footer class="footer" id="contact">
-            <a href="mailto:jessesuderman@gmail.com" class="footer__link">jessesuderman@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="//github.com/C0dras1">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+          <a href="mailto:jessesuderman@gmail.com" class="footer__link">jessesuderman@gmail.com</a>
+          <ul class="social-list">
+              <li class="social-list__item">
+                  <a class="social-list__link" href="https://codepen.io">
+                      <i class="fab fa-codepen"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="http://dribbble.com">
+                      <i class="fab fa-dribbble"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="//github.com/C0dras1">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </li>
+          </ul>
+      </footer>
         
         
-        <script src="js/index.js"></script>
+        <script src="../js/index.js"></script>
         
     </body>
-</html>

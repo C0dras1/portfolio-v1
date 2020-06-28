@@ -494,7 +494,20 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto-fit;
+    margin-left: auto;
+    margin-right: auto;
 }
+.techList {
+    margin-left: auto;
+    min-width: 82%;
+}
+.portfolio-item-individual ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 
 .portfolio-item-individual p {
     max-width: 600px;
